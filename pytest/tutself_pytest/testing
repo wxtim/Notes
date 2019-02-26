@@ -1,0 +1,8 @@
+#!/bin/bash
+# Runs different testing scripts:
+
+echo "---"
+python3 -m unittest tests_unittest/test_function.py
+
+echo "---"
+pytest
