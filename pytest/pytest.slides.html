@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11905,7 +11905,20 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Thoughts-on-Pytest">Thoughts on Pytest<a class="anchor-link" href="#Thoughts-on-Pytest">&#182;</a></h1><h2 id="Your-experience">Your experience<a class="anchor-link" href="#Your-experience">&#182;</a></h2><ul>
+<h1 id="Thoughts-on-Pytest">Thoughts on Pytest<a class="anchor-link" href="#Thoughts-on-Pytest">&#182;</a></h1><h2 id="Coming-up">Coming up<a class="anchor-link" href="#Coming-up">&#182;</a></h2><ol>
+<li>A brief review of what a quick web-search has to say</li>
+<li>Some trivial demos</li>
+</ol>
+<p><img src="etc/python_exam.jpg" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Your-experience">Your experience<a class="anchor-link" href="#Your-experience">&#182;</a></h2><ul>
 <li>Have you used unittest?</li>
 <li>Have you used pytest?</li>
 <li>What other testing frameworks have you used, not just in Python?</li>
@@ -11913,7 +11926,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11922,14 +11935,14 @@ a.anchor-link {
 <li>I have used unittest a lot on StaGE &amp; Improver</li>
 <li>I love doctest</li>
 <li>I have only come across pytest in the last week</li>
-<li>I have a PR which if accepted will add pytests to Rose.</li>
+<li>I have a PR which if accepted will add pytests to Rose. </li>
 </ul>
-<p><aside class="warning"><font color="red"><h3>I'm not an expert, but a fellow traveller sharing discoveries - I could be plain wrong, or raise points people disagree with!
-    </font></aside>&lt;/h3&gt;</p>
+<p><span style="font-size:4em">🌹</span></p>
+<p><span style='color:red; font-size:1.2em'>I'm not an expert, but a fellow traveller sharing discoveries - I could be plain wrong, or raise points people disagree with!</span></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11952,7 +11965,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11968,7 +11981,22 @@ a.anchor-link {
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sources">Sources<a class="anchor-link" href="#Sources">&#182;</a></h3><ol>
+<li><a href="https://www.slant.co/versus/9148/9149/~unittest_vs_pytest">https://www.slant.co/versus/9148/9149/~unittest_vs_pytest</a></li>
+<li><a href="https://docs.python-guide.org/writing/tests/">https://docs.python-guide.org/writing/tests/</a></li>
+<li><a href="https://cournape.github.io/why-i-am-not-a-fan-of-pytest.html">https://cournape.github.io/why-i-am-not-a-fan-of-pytest.html</a> - bit ranty?</li>
+<li><a href="https://docs.python-guide.org/writing/tests/">https://docs.python-guide.org/writing/tests/</a></li>
+<li><a href="https://docs.pytest.org/en/latest/index.html">https://docs.pytest.org/en/latest/index.html</a></li>
+</ol>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11977,14 +12005,13 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load function.py</span>
-<span class="c1"># A simple mathematical function on which to try different testing frameworks</span>
 
 <span class="k">def</span> <span class="nf">square_plus_10</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -11997,40 +12024,13 @@ a.anchor-link {
 <span class="sd">    42</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">10</span>
-
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This main function doesn</span><span class="se">\&#39;</span><span class="s2">t do anything&quot;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-    
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This main function doesn&#39;t do anything
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12039,30 +12039,26 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_unittest/test_function1.py</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
 
 <span class="kn">from</span> <span class="nn">function</span> <span class="k">import</span> <span class="n">square_plus_10</span>
 
-<span class="n">TEST_CASES</span> <span class="o">=</span> <span class="p">([</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">],</span>
-              <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">],</span>
-              <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Bowl of petunias&quot;</span><span class="p">])</span>
-
-
 <span class="c1"># Very simple unittest</span>
 <span class="k">class</span> <span class="nc">TestSquarePlus10</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_basic_ok1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">square_plus_10</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="mi">14</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_basic_ok2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">square_plus_10</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span> <span class="mi">14</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">test_basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_which_ought_to_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">square_plus_10</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span> <span class="s2">&quot;Bowl of petunias&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -12070,19 +12066,10 @@ a.anchor-link {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>which I can run thus:</p>
-
-</div>
-</div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python3 -m unittest tests_unittest/test_function1.py
@@ -12102,17 +12089,17 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>F
+<pre>..F
 ======================================================================
-FAIL: test_basic (tests_unittest.test_function1.TestSquarePlus10)
+FAIL: test_which_ought_to_fail (tests_unittest.test_function1.TestSquarePlus10)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File &#34;/net/home/h02/tpilling/tutself_pytest/tests_unittest/test_function1.py&#34;, line 21, in test_basic
+  File &#34;/net/home/h02/tpilling/external_share_notebooks/pytest/tests_unittest/test_function1.py&#34;, line 21, in test_which_ought_to_fail
     self.assertEqual(square_plus_10(7), &#34;Bowl of petunias&#34;)
 AssertionError: 59 != &#39;Bowl of petunias&#39;
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 3 tests in 0.001s
 
 FAILED (failures=1)
 </pre>
@@ -12122,13 +12109,266 @@ FAILED (failures=1)
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-could-this-look-like-in-pytest?">What could this look like in pytest?<a class="anchor-link" href="#What-could-this-look-like-in-pytest?">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>exactly the same?!  - you can use Pytest on unittests!</p>
+
+</div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_unittest/test_function1.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_unittest/</span>test_function1.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                                 <span class="ansi-green-fg">67% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██▋   </span>
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestSquarePlus10.test_which_ought_to_fail ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+self = &lt;test_function1.TestSquarePlus10 testMethod=test_which_ought_to_fail&gt;
+
+<span class="ansi-bold">    def test_which_ought_to_fail(self):</span>
+<span class="ansi-bold">&gt;       self.assertEqual(square_plus_10(7), &#34;Bowl of petunias&#34;)</span>
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: 59 != &#39;Bowl of petunias&#39;</span>
+
+<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function1.py</span>:21: AssertionError
+
+ <span class="ansi-cyan-fg">tests_unittest/</span>test_function1.py <span class="ansi-red-fg">⨯</span>                                                                                                                                                                 <span class="ansi-red-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-red-fg ansi-black-bg">█</span><span class="ansi-red-fg ansi-black-bg">███</span>
+
+Results (0.13s):
+<span class="ansi-green-fg">       2 passed</span>
+<span class="ansi-red-fg">       1 failed</span>
+         - <span class="ansi-cyan-fg">tests_unittest</span>/test_function1.py:20 <span class="ansi-red-fg">TestSquarePlus10.test_which_ought_to_fail</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_pytest/test_pytest_example1.py</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="kn">from</span> <span class="nn">function</span> <span class="k">import</span> <span class="n">square_plus_10</span>
+
+<span class="k">def</span> <span class="nf">test_basic_ok1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">square_plus_10</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">14</span>
+
+<span class="k">def</span> <span class="nf">test_basic_ok2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">square_plus_10</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">14</span>
+
+<span class="k">def</span> <span class="nf">test_blatently_going_to_fail</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">square_plus_10</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Bowl of petunias&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example1.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_pytest_example1.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                             <span class="ansi-green-fg">67% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██▋   </span>
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― test_blatently_going_to_fail ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+<span class="ansi-bold">    def test_blatently_going_to_fail():</span>
+<span class="ansi-bold">&gt;       assert square_plus_10(7) == &#34;Bowl of petunias&#34;</span>
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert 59 == &#39;Bowl of petunias&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E        +  where 59 = square_plus_10(7)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example1.py</span>:12: AssertionError
+
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_pytest_example1.py <span class="ansi-red-fg">⨯</span>                                                                                                                                                             <span class="ansi-red-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-red-fg ansi-black-bg">█</span><span class="ansi-red-fg ansi-black-bg">███</span>
+
+Results (0.11s):
+<span class="ansi-green-fg">       2 passed</span>
+<span class="ansi-red-fg">       1 failed</span>
+         - <span class="ansi-cyan-fg">tests_pytest</span>/test_pytest_example1.py:11 <span class="ansi-red-fg">test_blatently_going_to_fail</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --doctest-modules <span class="k">function</span>.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― [doctest] function.square_plus_10 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+004 
+005     Doctest Example (Including one designed to fail)
+006     &gt;&gt;&gt; square_plus_10(2)
+007     14
+008     &gt;&gt;&gt; square_plus_10(-2)
+009     14
+010     &gt;&gt;&gt; square_plus_10(7)
+Expected:
+    A very surprised sperm whale
+Got:
+    59
+
+<span class="ansi-red-intense-fg ansi-bold">/net/home/h02/tpilling/external_share_notebooks/pytest/function.py</span>:10: DocTestFailure
+
+ function.py <span class="ansi-red-fg">⨯</span>                                                                                                                                                                                      <span class="ansi-red-fg">100% </span><span class="ansi-red-fg ansi-black-bg">█</span><span class="ansi-red-fg ansi-black-bg">█████████</span>
+
+Results (0.04s):
+<span class="ansi-red-fg">       1 failed</span>
+         - function.py:4 <span class="ansi-red-fg">[doctest] function.square_plus_10</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>Unittest</th>
+<th>Pytest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subclassing unittest.Testcase</td>
+<td>simple functions</td>
+</tr>
+<tr>
+<td>Nicely organised</td>
+<td>you can still have classes!</td>
+</tr>
+<tr>
+<td>assert Functions</td>
+<td>Native assert using Boolean operators</td>
+</tr>
+<tr>
+<td>Not doctest</td>
+<td>can run doctest</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Parameterizing-Tests">Parameterizing Tests<a class="anchor-link" href="#Parameterizing-Tests">&#182;</a></h1><p>When you want to test a lot of similar things there are some interesting possibilities...</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Traditionally you could have done something like: 
+(Note the need for a custome <code>msg</code> to assist debugging)</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_unittest/test_function2.py</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
 
 <span class="kn">from</span> <span class="nn">function</span> <span class="k">import</span> <span class="n">square_plus_10</span>
 
@@ -12136,7 +12376,6 @@ FAILED (failures=1)
               <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">],</span>
               <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Bowl of petunias&quot;</span><span class="p">])</span>
 
-<span class="c1"># Slightly More Convient</span>
 <span class="k">class</span> <span class="nc">TestSquarePlus10_iterative_but_unhelpful</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">test_basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">TEST_CASES</span><span class="p">:</span>
@@ -12149,13 +12388,13 @@ FAILED (failures=1)
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python3 -m unittest tests_unittest/test_function2~.py
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python3 -m unittest tests_unittest/test_function2.py
 </pre></div>
 
 </div>
@@ -12177,7 +12416,7 @@ FAILED (failures=1)
 FAIL: test_basic (tests_unittest.test_function2.TestSquarePlus10_iterative_but_unhelpful)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File &#34;/net/home/h02/tpilling/tutself_pytest/tests_unittest/test_function2.py&#34;, line 17, in test_basic
+  File &#34;/net/home/h02/tpilling/external_share_notebooks/pytest/tests_unittest/test_function2.py&#34;, line 14, in test_basic
     self.assertEqual(square_plus_10(case[0]), case[1], msg)
 AssertionError: 59 != &#39;Bowl of petunias&#39; : square_plus_10(7) != Bowl of petunias
 
@@ -12192,13 +12431,23 @@ FAILED (failures=1)
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(Aside) Which is ok, although the Python &gt; 3.4 idiom is nicer...</p>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_unittest/test_function3.py</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
 
 <span class="kn">from</span> <span class="nn">function</span> <span class="k">import</span> <span class="n">square_plus_10</span>
 
@@ -12206,8 +12455,6 @@ FAILED (failures=1)
               <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">],</span>
               <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Bowl of petunias&quot;</span><span class="p">])</span>
 
-
-<span class="c1"># Much nicer (from 3.5 onwards)</span>
 <span class="k">class</span> <span class="nc">TestSquarePlus10_iterative_nicer</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">test_basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">TEST_CASES</span><span class="p">:</span>
@@ -12219,10 +12466,19 @@ FAILED (failures=1)
 </div>
 </div>
 
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(Note the label at the top right - really handy for debugging)</p>
+
+</div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python3 -m unittest tests_unittest/test_function3.py
@@ -12247,12 +12503,12 @@ FAILED (failures=1)
 FAIL: test_basic (tests_unittest.test_function3.TestSquarePlus10_iterative_nicer) [[7, &#39;Bowl of petunias&#39;]]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File &#34;/net/home/h02/tpilling/tutself_pytest/tests_unittest/test_function3.py&#34;, line 17, in test_basic
+  File &#34;/net/home/h02/tpilling/external_share_notebooks/pytest/tests_unittest/test_function3.py&#34;, line 13, in test_basic
     self.assertEqual(square_plus_10(case[0]), case[1])
 AssertionError: 59 != &#39;Bowl of petunias&#39;
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.002s
+Ran 1 test in 0.011s
 
 FAILED (failures=1)
 </pre>
@@ -12262,103 +12518,21 @@ FAILED (failures=1)
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>we can also run these tests using pytest, which, quelle surprise, produces the same results...</p>
-
+<h3 id="But-in-Pytest-we-have-a-parameterization-of-tests:">But in Pytest we have a parameterization of tests:<a class="anchor-link" href="#But-in-Pytest-we-have-a-parameterization-of-tests:">&#182;</a></h3>
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> pytest tests_unittest/
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 3 items                                                                                                                                                                                                 
-
-tests_unittest/test_function.py <span class="ansi-red-fg">F</span><span class="ansi-red-fg">F</span><span class="ansi-red-fg">F</span><span class="ansi-cyan-fg">                                                                                                                                                                         [100%]</span>
-
-==================================================================================================== FAILURES =====================================================================================================
-<span class="ansi-red-intense-fg ansi-bold">___________________________________________________________________________________________ TestSquarePlus10.test_basic ___________________________________________________________________________________________</span>
-
-self = &lt;test_function.TestSquarePlus10 testMethod=test_basic&gt;
-
-<span class="ansi-bold">    def test_basic(self):</span>
-<span class="ansi-bold">&gt;       self.assertEqual(square_plus_10(7), &#34;Bowl of petunias&#34;)</span>
-<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: 59 != &#39;Bowl of petunias&#39;</span>
-
-<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function.py</span>:21: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">_______________________________________________________________________________ TestSquarePlus10_iterative_but_unhelpful.test_basic _______________________________________________________________________________</span>
-
-self = &lt;test_function.TestSquarePlus10_iterative_but_unhelpful testMethod=test_basic&gt;
-
-<span class="ansi-bold">    def test_basic(self):</span>
-<span class="ansi-bold">        for case in TEST_CASES:</span>
-<span class="ansi-bold">            # create a useful error message</span>
-<span class="ansi-bold">            msg = f&#34;square_plus_10({case[0]}) != {case[1]}&#34;</span>
-<span class="ansi-bold">&gt;           self.assertEqual(square_plus_10(case[0]), case[1], msg)</span>
-<span class="ansi-red-intense-fg ansi-bold">E           AssertionError: 59 != &#39;Bowl of petunias&#39; : square_plus_10(7) != Bowl of petunias</span>
-
-<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function.py</span>:30: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">___________________________________________________________________________________ TestSquarePlus10_iterative_nicer.test_basic ___________________________________________________________________________________</span>
-
-self = &lt;test_function.TestSquarePlus10_iterative_nicer testMethod=test_basic&gt;
-
-<span class="ansi-bold">    def test_basic(self):</span>
-<span class="ansi-bold">        for case in TEST_CASES:</span>
-<span class="ansi-bold">            with self.subTest(case):</span>
-<span class="ansi-bold">&gt;               self.assertEqual(square_plus_10(case[0]), case[1])</span>
-<span class="ansi-red-intense-fg ansi-bold">E               AssertionError: 59 != &#39;Bowl of petunias&#39;</span>
-
-<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function.py</span>:38: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">============================================================================================ 3 failed in 0.12 seconds =============================================================================================</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also write a similar test in pure pytest format (which means that it won't work in unittest)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_pytest/test_pytest_example.py</span>
 <span class="kn">import</span> <span class="nn">pytest</span>
 
 <span class="kn">from</span> <span class="nn">function</span> <span class="k">import</span> <span class="n">square_plus_10</span>
@@ -12367,35 +12541,19 @@ self = &lt;test_function.TestSquarePlus10_iterative_nicer testMethod=test_basic&
               <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">],</span>
               <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Bowl of petunias&quot;</span><span class="p">])</span>
 
-<span class="c1"># Much nicer</span>
-<span class="c1"># No class required, no self required, no subTest required</span>
-<span class="c1"># class TestSquarePlus10_iterative_nicer(unittest.TestCase):</span>
-<span class="k">def</span> <span class="nf">test_pure_pytest_example</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">TEST_CASES</span><span class="p">:</span>
-        <span class="k">assert</span><span class="p">(</span><span class="n">square_plus_10</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="n">case</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-
-<span class="c1"># Using Pytest parameterize</span>
 <span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span> <span class="n">TEST_CASES</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_pytest_with_parameterization</span><span class="p">(</span><span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
     <span class="k">assert</span> <span class="n">square_plus_10</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span>
-
-
-<span class="c1"># Show the working of pytest.approx lest anyone ask me about</span>
-<span class="c1"># assertAlmostEqual</span>
-<span class="k">def</span> <span class="nf">test_pytest_almost_equal</span><span class="p">():</span>
-    <span class="n">pytest</span><span class="o">.</span><span class="n">approx</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nb">abs</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">==</span> <span class="mf">9.9999</span>
-    <span class="n">pytest</span><span class="o">.</span><span class="n">approx</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">rel</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">==</span> <span class="mf">1.01</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example.py
@@ -12415,26 +12573,13 @@ self = &lt;test_function.TestSquarePlus10_iterative_nicer testMethod=test_basic&
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 5 items                                                                                                                                                                                                 
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_pytest_example.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                              <span class="ansi-green-fg">67% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██▋   </span>
 
-tests_pytest/test_pytest_example.py <span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                                   [100%]</span>
-
-==================================================================================================== FAILURES =====================================================================================================
-<span class="ansi-red-intense-fg ansi-bold">____________________________________________________________________________________________ test_pure_pytest_example _____________________________________________________________________________________________</span>
-
-<span class="ansi-bold">    def test_pure_pytest_example():</span>
-<span class="ansi-bold">        for case in TEST_CASES:</span>
-<span class="ansi-bold">            # Hey look, it&#39;s just the inbuilt assert</span>
-<span class="ansi-bold">&gt;           assert(square_plus_10(case[0]) == case[1])</span>
-<span class="ansi-red-intense-fg ansi-bold">E           AssertionError: assert 59 == &#39;Bowl of petunias&#39;</span>
-<span class="ansi-red-intense-fg ansi-bold">E            +  where 59 = square_plus_10(7)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example.py</span>:18: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">______________________________________________________________________________ test_pytest_with_parameterization[7-Bowl of petunias] ______________________________________________________________________________</span>
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― test_pytest_with_parameterization[7-Bowl of petunias] ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
 test_input = 7, expected = &#39;Bowl of petunias&#39;
 
@@ -12444,84 +12589,14 @@ test_input = 7, expected = &#39;Bowl of petunias&#39;
 <span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert 59 == &#39;Bowl of petunias&#39;</span>
 <span class="ansi-red-intense-fg ansi-bold">E        +  where 59 = square_plus_10(7)</span>
 
-<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example.py</span>:23: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">======================================================================================= 2 failed, 3 passed in 0.08 seconds ========================================================================================</span>
-</pre>
-</div>
-</div>
+<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example.py</span>:11: AssertionError
 
-</div>
-</div>
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_pytest_example.py <span class="ansi-red-fg">⨯</span>                                                                                                                                                              <span class="ansi-red-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-red-fg ansi-black-bg">█</span><span class="ansi-red-fg ansi-black-bg">███</span>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>We didn't have to do any of the self.xxx stuff</li>
-<li>We didn't have to have classes (although we can if it helps us organise stuff)</li>
-<li>We didn't have to do much to get a useful error message.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Doctests">Doctests<a class="anchor-link" href="#Doctests">&#182;</a></h2><p>cooler still you can run doctests:</p>
-
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --doctest-modules <span class="k">function</span>.py
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 1 item                                                                                                                                                                                                  
-
-function.py <span class="ansi-red-fg">F</span><span class="ansi-cyan-fg">                                                                                                                                                                                               [100%]</span>
-
-==================================================================================================== FAILURES =====================================================================================================
-<span class="ansi-red-intense-fg ansi-bold">________________________________________________________________________________________ [doctest] function.square_plus_10 ________________________________________________________________________________________</span>
-004 
-005     Doctest Example (Including one designed to fail)
-006     &gt;&gt;&gt; square_plus_10(2)
-007     14
-008     &gt;&gt;&gt; square_plus_10(-2)
-009     14
-010     &gt;&gt;&gt; square_plus_10(7)
-Expected:
-    A very surprised sperm whale
-Got:
-    59
-
-<span class="ansi-red-intense-fg ansi-bold">/net/home/h02/tpilling/tutself_pytest/function.py</span>:10: DocTestFailure
-<span class="ansi-red-intense-fg ansi-bold">============================================================================================ 1 failed in 0.02 seconds =============================================================================================</span>
+Results (0.13s):
+<span class="ansi-green-fg">       2 passed</span>
+<span class="ansi-red-fg">       1 failed</span>
+         - <span class="ansi-cyan-fg">tests_pytest</span>/test_pytest_example.py:9 <span class="ansi-red-fg">test_pytest_with_parameterization[7-Bowl of petunias]</span>
 </pre>
 </div>
 </div>
@@ -12534,17 +12609,17 @@ Got:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-DeBug-Compatibility">Python DeBug Compatibility<a class="anchor-link" href="#Python-DeBug-Compatibility">&#182;</a></h1><p>You can even drop into the doctest in pdb mode!</p>
+<h1 id="Python-DeBug-Compatibility">Python DeBug Compatibility<a class="anchor-link" href="#Python-DeBug-Compatibility">&#182;</a></h1><p>You can drop into debug mode giving you a chance to poke around in the environment:</p>
 
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest --doctest-modules <span class="k">function</span>.py --pdb
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example.py --pdb
 </pre></div>
 
 </div>
@@ -12561,30 +12636,39 @@ Got:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 1 item                                                                                                                                                                                                  
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_pytest_example.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                              <span class="ansi-green-fg">67% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██▋   </span>
 
-function.py <span class="ansi-red-fg">F</span>
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― test_pytest_with_parameterization[7-Bowl of petunias] ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+test_input = 7, expected = &#39;Bowl of petunias&#39;
+
+<span class="ansi-bold">    @pytest.mark.parametrize(&#34;test_input, expected&#34;, TEST_CASES)</span>
+<span class="ansi-bold">    def test_pytest_with_parameterization(test_input, expected):</span>
+<span class="ansi-bold">&gt;       assert square_plus_10(test_input) == expected</span>
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert 59 == &#39;Bowl of petunias&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E        +  where 59 = square_plus_10(7)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example.py</span>:11: AssertionError
+
+
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; traceback &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-004 
-005     Doctest Example (Including one designed to fail)
-006     &gt;&gt;&gt; square_plus_10(2)
-007     14
-008     &gt;&gt;&gt; square_plus_10(-2)
-009     14
-010     &gt;&gt;&gt; square_plus_10(7)
-Expected:
-    A very surprised sperm whale
-Got:
-    59
 
-<span class="ansi-red-intense-fg ansi-bold">/net/home/h02/tpilling/tutself_pytest/function.py</span>:10: DocTestFailure
+test_input = 7, expected = &#39;Bowl of petunias&#39;
+
+<span class="ansi-bold">    @pytest.mark.parametrize(&#34;test_input, expected&#34;, TEST_CASES)</span>
+<span class="ansi-bold">    def test_pytest_with_parameterization(test_input, expected):</span>
+<span class="ansi-bold">&gt;       assert square_plus_10(test_input) == expected</span>
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert 59 == &#39;Bowl of petunias&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E        +  where 59 = square_plus_10(7)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">tests_pytest/test_pytest_example.py</span>:11: AssertionError
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; entering PDB &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-&gt; /opt/scitools/environments/experimental/2019_02_18-1/lib/python3.6/site-packages/_pytest/doctest.py(153)report_failure()
--&gt; raise failure
+&gt; /net/home/h02/tpilling/external_share_notebooks/pytest/tests_pytest/test_pytest_example.py(11)test_pytest_with_parameterization()
+-&gt; assert square_plus_10(test_input) == expected
 (Pdb) 
 --KeyboardInterrupt--
 (Pdb) </pre>
@@ -12599,28 +12683,18 @@ Got:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Markers">Markers<a class="anchor-link" href="#Markers">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A small change to the pytests file allows us to tag tests</p>
-<div class="highlight"><pre><span></span><span class="nd">@pytest.mark.pointless_tests</span>
-<span class="k">def</span> <span class="nf">test_pytest_almost_equal</span><span class="p">():</span>
-</pre></div>
+<h2 id="Running-Subsets-of-Tests">Running Subsets of Tests<a class="anchor-link" href="#Running-Subsets-of-Tests">&#182;</a></h2><p>You can still run subsets of tests which can be organised by class</p>
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -m <span class="s2">&quot;pointless_tests&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#                      test module file :: class (optional)               ::test (optional)</span>
+<span class="o">!</span>pytest tests_unittest/test_function3.py::TestSquarePlus10_iterative_nicer::test_basic
 </pre></div>
 
 </div>
@@ -12637,151 +12711,12 @@ Got:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 2 items / 1 deselected / 1 selected                                                                                                                                                                     
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
 
-tests_pytest/test_pytest_example_allgood.py <span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                               [100%]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">===================================================================================== 1 passed, 1 deselected in 0.01 seconds ======================================================================================</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -m <span class="s2">&quot;not pointless_tests&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 2 items / 1 deselected / 1 selected                                                                                                                                                                     
-
-tests_pytest/test_pytest_example_allgood.py <span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                               [100%]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">===================================================================================== 1 passed, 1 deselected in 0.02 seconds ======================================================================================</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>or use k to get specific expression matching.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -k <span class="s2">&quot;almost_equal&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 2 items / 1 deselected / 1 selected                                                                                                                                                                     
-
-tests_pytest/test_pytest_example_allgood.py <span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                               [100%]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">===================================================================================== 1 passed, 1 deselected in 0.01 seconds ======================================================================================</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>...or select test classes or class.methods()...</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_unittest/test_function3.py::TestSquarePlus10_iterative_nicer::test_basic
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
-collected 1 item                                                                                                                                                                                                  
-
-tests_unittest/test_function3.py <span class="ansi-red-fg">F</span><span class="ansi-cyan-fg">                                                                                                                                                                          [100%]</span>
-
-==================================================================================================== FAILURES =====================================================================================================
-<span class="ansi-red-intense-fg ansi-bold">___________________________________________________________________________________ TestSquarePlus10_iterative_nicer.test_basic ___________________________________________________________________________________</span>
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestSquarePlus10_iterative_nicer.test_basic ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
 self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic&gt;
 
@@ -12791,8 +12726,13 @@ self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic
 <span class="ansi-bold">&gt;               self.assertEqual(square_plus_10(case[0]), case[1])</span>
 <span class="ansi-red-intense-fg ansi-bold">E               AssertionError: 59 != &#39;Bowl of petunias&#39;</span>
 
-<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function3.py</span>:17: AssertionError
-<span class="ansi-red-intense-fg ansi-bold">============================================================================================ 1 failed in 0.07 seconds =============================================================================================</span>
+<span class="ansi-red-intense-fg ansi-bold">tests_unittest/test_function3.py</span>:13: AssertionError
+
+ <span class="ansi-cyan-fg">tests_unittest/</span>test_function3.py <span class="ansi-red-fg">⨯</span>                                                                                                                                                                 <span class="ansi-red-fg">100% </span><span class="ansi-red-fg ansi-black-bg">█</span><span class="ansi-red-fg ansi-black-bg">█████████</span>
+
+Results (0.07s):
+<span class="ansi-red-fg">       1 failed</span>
+         - <span class="ansi-cyan-fg">tests_unittest</span>/test_function3.py:10 <span class="ansi-red-fg">TestSquarePlus10_iterative_nicer.test_basic</span>
 </pre>
 </div>
 </div>
@@ -12800,7 +12740,189 @@ self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pytest also allows you to select tests by name search</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -k <span class="s2">&quot;almost_equal&quot;</span> --verbose
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+cachedir: .pytest_cache
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/test_pytest_example_allgood.py</span>::test_pytest_almost_equal <span class="ansi-green-fg">✓</span>                                                                                                                            <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█████████</span>
+
+Results (0.04s):
+<span class="ansi-green-fg">       1 passed</span>
+<span class="ansi-yellow-fg">       1 deselected</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -k <span class="s2">&quot;not almost_equal&quot;</span>  --verbose
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+cachedir: .pytest_cache
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/test_pytest_example_allgood.py</span>::test_pure_pytest_example <span class="ansi-green-fg">✓</span>                                                                                                                            <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█████████</span>
+
+Results (0.04s):
+<span class="ansi-green-fg">       1 passed</span>
+<span class="ansi-yellow-fg">       1 deselected</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Subsetting-tests-using-pytest.mark">Subsetting tests using pytest.mark<a class="anchor-link" href="#Subsetting-tests-using-pytest.mark">&#182;</a></h2><p>This effectively adds a tagging system to your tests:</p>
+<p>A small change to the pytests file allows us to tag tests</p>
+<div class="highlight"><pre><span></span><span class="nd">@pytest.mark.pointless_tests</span>
+<span class="k">def</span> <span class="nf">test_pytest_almost_equal</span><span class="p">():</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -m <span class="s2">&quot;pointless_tests&quot;</span>  --verbose
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+cachedir: .pytest_cache
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/test_pytest_example_allgood.py</span>::test_pytest_almost_equal <span class="ansi-green-fg">✓</span>                                                                                                                            <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█████████</span>
+
+Results (0.04s):
+<span class="ansi-green-fg">       1 passed</span>
+<span class="ansi-yellow-fg">       1 deselected</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_pytest_example_allgood.py -m <span class="s2">&quot;not pointless_tests&quot;</span>  --verbose
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+cachedir: .pytest_cache
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span>
+ <span class="ansi-cyan-fg">tests_pytest/test_pytest_example_allgood.py</span>::test_pure_pytest_example <span class="ansi-green-fg">✓</span>                                                                                                                            <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█████████</span>
+
+Results (0.02s):
+<span class="ansi-green-fg">       1 passed</span>
+<span class="ansi-yellow-fg">       1 deselected</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12813,16 +12935,7 @@ self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Print">Print<a class="anchor-link" href="#Print">&#182;</a></h2><p><code>pytest --capture=no</code> will cause all print() to go to sdout.</p>
-
-</div>
-</div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12831,10 +12944,10 @@ self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_parallel.py -n <span class="m">1</span>
@@ -12854,13 +12967,15 @@ self = &lt;test_function3.TestSquarePlus10_iterative_nicer testMethod=test_basic
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
 gw0 [4]
-<span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                                                                        [100%]</span>
-<span class="ansi-green-intense-fg ansi-bold">============================================================================================ 4 passed in 18.93 seconds ============================================================================================</span>
+
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_parallel.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                                 <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span>
+
+Results (19.23s):
+<span class="ansi-green-fg">       4 passed</span>
 </pre>
 </div>
 </div>
@@ -12868,10 +12983,10 @@ gw0 [4]
 </div>
 </div>
 
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_parallel.py -n <span class="m">4</span>
@@ -12891,13 +13006,15 @@ gw0 [4]
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">=============================================================================================== test session starts ===============================================================================================</span>
-platform linux -- Python 3.6.6, pytest-4.2.1, py-1.7.0, pluggy-0.8.1
-rootdir: /net/home/h02/tpilling/tutself_pytest, inifile:
-plugins: xdist-1.26.1, remotedata-0.3.1, openfiles-0.3.2, forked-1.0.2, doctestplus-0.2.0, arraydiff-0.3
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
 gw0 [4] / gw1 [4] / gw2 [4] / gw3 [4]
-<span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-cyan-fg">                                                                                                                                                                                                        [100%]</span>
-<span class="ansi-green-intense-fg ansi-bold">============================================================================================ 4 passed in 6.66 seconds =============================================================================================</span>
+
+ <span class="ansi-cyan-fg">tests_pytest/</span>test_parallel.py <span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span><span class="ansi-green-fg">✓</span>                                                                                                                                                                 <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">██</span>
+
+Results (6.15s):
+<span class="ansi-green-fg">       4 passed</span>
 </pre>
 </div>
 </div>
@@ -12905,23 +13022,154 @@ gw0 [4] / gw1 [4] / gw2 [4] / gw3 [4]
 </div>
 </div>
 
-</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><ul>
-<li>There a lots of good reasons to use Pytest. </li>
-<li>I've seen some doubts on the internet</li>
-<li>But not many</li>
-<li>I haven't touched on Pytest fixtures I propose adding them to the Python Guild Todo List!</li>
+<h1 id="Fixtures">Fixtures<a class="anchor-link" href="#Fixtures">&#182;</a></h1><p>Fixtures are generator expressions which replace unittest set_up and tear_down methods.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load tests_pytest/test_fixtures_eg.py</span>
+<span class="c1"># Example of testing numpy functionality with a fixture</span>
+<span class="c1"># Since these are testing numpy f(n)&#39;ality they are pointless</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">from</span>  <span class="nn">colorama</span> <span class="k">import</span> <span class="n">Fore</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<span class="k">def</span> <span class="nf">numpy_wx_data</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Fore</span><span class="o">.</span><span class="n">RED</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> [NOTE] Setting Up&#39;</span><span class="p">)</span>
+    <span class="kn">import</span> <span class="nn">numpy</span>
+    <span class="n">example</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                           <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">],</span>
+                           <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">]])</span>
+    <span class="k">yield</span> <span class="n">example</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Fore</span><span class="o">.</span><span class="n">BLUE</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> [NOTE] Tearing Down&#39;</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">example</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_numpy_rot90</span><span class="p">(</span><span class="n">numpy_wx_data</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Fore</span><span class="o">.</span><span class="n">GREEN</span> <span class="o">+</span> <span class="s1">&#39; [TEST] rot90&#39;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">numpy_wx_data</span><span class="p">)</span>
+    <span class="n">expected</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                            <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                            <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">10</span><span class="p">]])</span>
+    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">==</span> <span class="n">expected</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">test_numpy_flip</span><span class="p">(</span><span class="n">numpy_wx_data</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Fore</span><span class="o">.</span><span class="n">GREEN</span> <span class="o">+</span> <span class="s1">&#39; [TEST] flip&#39;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">numpy_wx_data</span><span class="p">)</span>
+    <span class="n">expected</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+                            <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+                            <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">]])</span>
+    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">==</span> <span class="n">expected</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest tests_pytest/test_fixtures_eg.py --verbose --capture<span class="o">=</span>no
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">Test session starts (platform: linux, Python 3.7.2, pytest 4.3.0, pytest-sugar 0.9.2)</span>
+cachedir: .pytest_cache
+rootdir: /net/home/h02/tpilling/external_share_notebooks/pytest, inifile:
+plugins: xdist-1.26.1, sugar-0.9.2, forked-1.0.2
+<span class="ansi-bold">collecting ... </span><span class="ansi-red-fg">
+ [NOTE] Setting Up
+</span><span class="ansi-green-fg"> [TEST] rot90
+
+</span><span class="ansi-blue-fg">
+ [NOTE] Tearing Down
+ </span><span class="ansi-cyan-fg">tests_pytest/test_fixtures_eg.py</span>::test_numpy_rot90 <span class="ansi-green-fg">✓</span>                                                                                                                                                <span class="ansi-green-fg">50% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">████     </span><span class="ansi-red-fg">
+ [NOTE] Setting Up
+</span><span class="ansi-green-fg"> [TEST] flip
+
+</span><span class="ansi-blue-fg">
+ [NOTE] Tearing Down
+ </span><span class="ansi-cyan-fg">tests_pytest/test_fixtures_eg.py</span>::test_numpy_flip <span class="ansi-green-fg">✓</span>                                                                                                                                                <span class="ansi-green-fg">100% </span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">████</span><span class="ansi-green-fg ansi-black-bg">█</span><span class="ansi-green-fg ansi-black-bg">████</span>
+
+Results (0.60s):
+<span class="ansi-green-fg">       2 passed</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><p>I like the look of pytest because</p>
+<ul>
+<li>It's easy to write simple tests</li>
+<li>But scalable</li>
+<li>It has neat tools for tagging and running subsets of tests</li>
+<li>You can use a debugger on a failed test</li>
+<li>Parameterize is nice</li>
+<li>Paralellization is vital if you have a lot of tests</li>
+<li>You can run doctest</li>
+<li>Still runs unittest tests</li>
+<li><p>Ecosystem of Plugins (My output is mostly prettified... by one)</p>
+</li>
+<li><p>I think that there is a whole other talk on the details of fixtures...</p>
+</li>
 </ul>
-<h2 id="Discussion-Point">Discussion Point<a class="anchor-link" href="#Discussion-Point">&#182;</a></h2><ol>
-<li><p>What do people think of the web arguements?</p>
-</li>
-<li><p>Should we aim to make our pytests unittest compatible, or not worry?</p>
-</li>
-</ol>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Discussion-Point">Discussion Point<a class="anchor-link" href="#Discussion-Point">&#182;</a></h2><p>Should we aim to make our pytests unittest compatible, or not worry?</p>
+<h2 id="References">References<a class="anchor-link" href="#References">&#182;</a></h2><ul>
+<li>My source code at <strong><a href="https://github.com/wxtim/Notes/tree/master/pytest">https://github.com/wxtim/Notes/tree/master/pytest</a></strong> includes a list of references not in the the presentation</li>
+<li>Mah spellin' <strong><a href="https://en.oxforddictionaries.com/spelling/ize-ise-or-yse">https://en.oxforddictionaries.com/spelling/ize-ise-or-yse</a></strong> so there</li>
+</ul>
 
 </div>
 </div>
@@ -12938,8 +13186,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12954,9 +13202,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
